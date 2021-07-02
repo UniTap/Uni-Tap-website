@@ -18,6 +18,7 @@ body {
     --color-blue: blue;
     --color-magenta: magenta;
     --color-violet: rgb(98, 31, 124);
+    --color-orange: rgb(209, 98, 7);
 }
 
 svg {
@@ -58,9 +59,6 @@ header {
     80% {
         background: rgb(138, 2, 120);
     }
-    100% {
-        background: rgb(6, 109, 206);
-    }
 }
 
 #navlist a {
@@ -68,14 +66,19 @@ header {
     display: block;
     color: var( --color-white);
     text-align: center;
-    padding: 16px;
+    padding: 10px;
     text-decoration: none;
     font-size: 24px;
-    margin-top: 3%
+    margin-top: 3%;
+    padding-right: 16px;
 }
 
 .navlist-right {
     float: right;
+}
+
+#navlist a:hover {
+    border-bottom: 3px solid var(--color-orange);
 }
 
 .navlist-right a {

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-white: #fff;
+    --color-red: red;
+    --color-yellow: yellow;
+    --color-green: green;
+    --color-lightBlue: rgb(0, 255, 255);
+    --color-cyan: cyan;
+    --color-blue: blue;
+    --color-magenta: magenta;
+    --color-violet: rgb(98, 31, 124);
+    --color-orange: rgb(209, 98, 7);
+    --color-pink: rgb(250, 204, 212);
+}
+
+.mission-vision {
+    background-color: var(--color-pink);
+}
+
+img.mission-and-vision {
+    width: 60%;
+}
+
+.imgdiv {
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+    font-size: 24px;
+    padding: 16px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Libre Baskerville', serif;
+}
