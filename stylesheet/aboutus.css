@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +9,7 @@
     --color-white: #fff;
     --color-red: red;
     --color-yellow: yellow;
-    --color-green: green;
+    --color-green: rgb(0, 255, 0);
     --color-lightBlue: rgb(0, 255, 255);
     --color-cyan: cyan;
     --color-blue: blue;
@@ -16,10 +17,6 @@
     --color-violet: rgb(98, 31, 124);
     --color-orange: rgb(209, 98, 7);
     --color-pink: rgb(250, 204, 212);
-}
-
-.mission-vision {
-    background-color: var(--color-pink);
 }
 
 img.mission-and-vision {
@@ -30,12 +27,14 @@ img.mission-and-vision {
     text-align: center;
 }
 
-.content {
+.expand p {
+    margin: 5px auto;
+    padding: 5px 10px;
     text-align: center;
+    width: 50%;
     font-size: 24px;
-    padding: 16px;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto', sans-serif;
+    border: 10px solid var(--color-green);
+    border-radius: 12px;
+    font-weight: bold;
 }
