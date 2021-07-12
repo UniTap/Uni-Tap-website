@@ -2,7 +2,7 @@
 body {
     margin: 20px auto;
     font-family: 'Roboto';
-    background: lightsteelblue;
+    background: white;
     color: #fff;
 }
 
@@ -403,5 +403,5 @@ ul li:nth-child(10n+9)::before {
 }
 
 #center {
-    background-color: lightsteelblue;
+    background-color: white;
 }
