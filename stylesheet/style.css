@@ -125,6 +125,9 @@ ul.tags li a {
     height: 15em;
     width: 15em;
     padding: 1em;
+    margin-left: 10mm;
+    margin-right: 5mm;
+    margin-top: 10mm;
     box-shadow: 20px 15px 7px rgba(33, 33, 33, .7);
     transform: rotate(-6deg);
     transition: transform .15s linear;
@@ -216,12 +219,12 @@ ul.tags li:nth-child(10n)::before {
     content: ' ';
     display: block;
     position: relative;
-    left: 80px;
-    top: 17px;
+    left: 120px;
+    top: 54px;
     width: 95px;
     height: 30px;
     z-index: 2;
-    background-color: rgba(243, 245, 228, 0.5);
+    background-color:lightgray;
     border: 2px solid rgba(255, 255, 255, 0.5);
     -webkit-box-shadow: 0 0 5px #888;
     -moz-box-shadow: 0 0 5px #888;
@@ -235,12 +238,12 @@ ul.tags li:nth-child(10n+1)::before {
     content: ' ';
     display: block;
     position: relative;
-    left: 50px;
-    top: 7px;
+    left: 80px;
+    top: 44px;
     width: 95px;
     height: 30px;
     z-index: 2;
-    background-color: rgba(243, 245, 228, 0.5);
+    background-color: lightgray;
     border: 2px solid rgba(255, 255, 255, 0.5);
     -webkit-box-shadow: 0 0 5px #888;
     -moz-box-shadow: 0 0 5px #888;
@@ -254,12 +257,12 @@ ul.tags li:nth-child(10n+2)::before {
     content: ' ';
     display: block;
     position: relative;
-    left: 90px;
-    top: 23px;
+    left: 130px;
+    top: 60px;
     width: 95px;
     height: 30px;
     z-index: 2;
-    background-color: rgba(243, 245, 228, 0.5);
+    background-color: lightgray;
     border: 2px solid rgba(255, 255, 255, 0.5);
     -webkit-box-shadow: 0 0 5px #888;
     -moz-box-shadow: 0 0 5px #888;
@@ -273,12 +276,12 @@ ul.tags li:nth-child(10n+3)::before {
     content: ' ';
     display: block;
     position: relative;
-    left: 60px;
-    top: 10px;
+    left: 94px;
+    top: 45px;
     width: 95px;
     height: 30px;
     z-index: 2;
-    background-color: rgba(243, 245, 228, 0.5);
+    background-color: lightgray;
     border: 2px solid rgba(255, 255, 255, 0.5);
     -webkit-box-shadow: 0 0 5px #888;
     -moz-box-shadow: 0 0 5px #888;
@@ -292,12 +295,12 @@ ul.tags li:nth-child(10n+4)::before {
     content: ' ';
     display: block;
     position: relative;
-    left: 80px;
-    top: 17px;
+    left: 120px;
+    top: 55px;
     width: 95px;
     height: 30px;
     z-index: 2;
-    background-color: rgba(243, 245, 228, 0.5);
+    background-color: lightgray;
     border: 2px solid rgba(255, 255, 255, 0.5);
     -webkit-box-shadow: 0 0 5px #888;
     -moz-box-shadow: 0 0 5px #888;
@@ -311,12 +314,12 @@ ul.tags li:nth-child(10n+5)::before {
     content: ' ';
     display: block;
     position: relative;
-    left: 50px;
-    top: 8px;
+    left: 85px;
+    top: 42px;
     width: 95px;
     height: 30px;
     z-index: 2;
-    background-color: rgba(243, 245, 228, 0.5);
+    background-color: lightgray;
     border: 2px solid rgba(255, 255, 255, 0.5);
     -webkit-box-shadow: 0 0 5px #888;
     -moz-box-shadow: 0 0 5px #888;
@@ -330,12 +333,12 @@ ul.tags li:nth-child(10n+6)::before {
     content: ' ';
     display: block;
     position: relative;
-    left: 90px;
-    top: 25px;
+    left: 130px;
+    top: 60px;
     width: 95px;
     height: 30px;
     z-index: 2;
-    background-color: rgba(243, 245, 228, 0.5);
+    background-color: lightgray;
     border: 2px solid rgba(255, 255, 255, 0.5);
     -webkit-box-shadow: 0 0 5px #888;
     -moz-box-shadow: 0 0 5px #888;
@@ -349,12 +352,12 @@ ul.tags li:nth-child(10n+7)::before {
     content: ' ';
     display: block;
     position: relative;
-    left: 55px;
-    top: 10px;
+    left: 90px;
+    top: 45px;
     width: 95px;
     height: 30px;
     z-index: 2;
-    background-color: rgba(243, 245, 228, 0.5);
+    background-color: lightgray;
     border: 2px solid rgba(255, 255, 255, 0.5);
     -webkit-box-shadow: 0 0 5px #888;
     -moz-box-shadow: 0 0 5px #888;
@@ -368,12 +371,12 @@ ul.tags li:nth-child(10n+8)::before {
     content: ' ';
     display: block;
     position: relative;
-    left: 80px;
-    top: 17px;
+    left: 120px;
+    top: 55px;
     width: 95px;
     height: 30px;
     z-index: 2;
-    background-color: rgba(243, 245, 228, 0.5);
+    background-color: lightgray;
     border: 2px solid rgba(255, 255, 255, 0.5);
     -webkit-box-shadow: 0 0 5px #888;
     -moz-box-shadow: 0 0 5px #888;
@@ -387,12 +390,12 @@ ul.tags li:nth-child(10n+9)::before {
     content: ' ';
     display: block;
     position: relative;
-    left: 50px;
-    top: 6px;
+    left: 85px;
+    top:42px;
     width: 95px;
     height: 30px;
     z-index: 2;
-    background-color: rgba(243, 245, 228, 0.5);
+    background-color: lightgray;
     border: 2px solid rgba(255, 255, 255, 0.5);
     -webkit-box-shadow: 0 0 5px #888;
     -moz-box-shadow: 0 0 5px #888;
@@ -408,47 +411,27 @@ ul.tags li:nth-child(10n+9)::before {
 }
 
 .bottom{
+    margin-top: 20mm;
     background: white;
+    display: block;
+    border: 5px solid black;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
 }
 
 .imgLogo2 {
     width: 33%;
     border-radius: 10%;
     margin-top: 20mm;
-    margin-left: -20mm;
+    margin-left: 80mm;
     height: 45%;
-    float: left;
-
-}
-
-.about{
-    display: block;
-    border-left: 5px dotted;
-    border-color: #3a86ff;
-    margin-top: -80mm;
-    height: 150px;
-    width: 200px;
-    text-align: center;
-    margin-left: 0mm;
-}
-
-.authors{
-    display: block;
-    border-left: 5px dotted;
-    border-color: #3a86ff;
-    margin-top: -80mm;
-    height: 150px;
-    width: 200px;
-    text-align: center;
-    margin-left: 20mm;
 }
 
 .contact{
     display: block;
-    border-left: 5px dotted;
-    border-color: #3a86ff;
     margin-top: -80mm;
-    height: 150px;
+    height: 200px;
     width: 200px;
     text-align: center;
     margin-left: 20mm;
@@ -456,60 +439,77 @@ ul.tags li:nth-child(10n+9)::before {
 
 .facebook{
 
-    width: 35%;
+    width: 30%;
     border-radius: 20%;
-    margin-left: 30px;
-    height: 35%;
-    float: left;
-   
-    
+    margin-top: 15mm;
+    margin-left: 40mm;
+    height: 30%;  
 }
 
 .instagram{
 
-    width: 35%;
+    width: 30%;
     border-radius: 30%;
-    margin-left: 120px;
-    margin-top: 10px;
-    height: 35%;
-    float: left;
-    
+    margin-left: 65mm;
+    margin-top: -22mm;
+    height: 30%;  
 }
 .linkedin{
 
-    width: 35%;
-    border-radius: 30%;
-    margin-left: 55mm;
-    margin-top: -115px;
-    height: 35%;
-    float: left;
-    
+    width: 40%;
+    border-radius: 50%;
+    margin-left: 85mm;
+    margin-top: -34mm;
+    height: 40%;
 }
 
 .twitter{
 
-    width: 35%;
+    width: 30%;
     border-radius: 30%;
-    margin-top: -110px;
-    margin-left: 105mm;
-    height: 35%;
-    float: left;
-    
+    margin-top: -60mm;
+    margin-left: 132mm;
+    height: 30%;
 }
 
 .gmail{
 
-    width: 35%;
+    width: 30%;
     border-radius: 5%;
-    margin-top: -50px;
-    margin-left: 80mm;
-    height: 35%;
-    float: left;
-    
+    margin-top: -47mm;
+    margin-left: 110mm;
+    height: 30%;
 }
 
 h{
     font-weight:bolder;
     text-align: center;
     margin-left: 50px;
+}
+
+.cookie-banner {
+    position: fixed;
+    bottom: 10px;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    z-index: 5;
+    padding: 15px 30px 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    height: 30px;
+    width: 20mm;
+    margin-bottom: 10px;
+    background-color: lightcoral;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
 }
