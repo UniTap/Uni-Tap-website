@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
 body {
     margin: 20px auto;
     font-family: 'Roboto';
@@ -9,6 +12,7 @@ body {
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto';
 }
 
 :root {
@@ -410,77 +414,6 @@ ul.tags li:nth-child(10n+9)::before {
     border-bottom: none;
 }
 
-.bottom{
-    margin-top: 20mm;
-    background: white;
-    display: block;
-    border: 5px solid black;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-}
-
-.imgLogo2 {
-    width: 33%;
-    border-radius: 10%;
-    margin-top: 20mm;
-    margin-left: 80mm;
-    height: 45%;
-}
-
-.contact{
-    display: block;
-    margin-top: -80mm;
-    height: 200px;
-    width: 200px;
-    text-align: center;
-    margin-left: 20mm;
-}
-
-.facebook{
-
-    width: 30%;
-    border-radius: 20%;
-    margin-top: 15mm;
-    margin-left: 40mm;
-    height: 30%;  
-}
-
-.instagram{
-
-    width: 30%;
-    border-radius: 30%;
-    margin-left: 65mm;
-    margin-top: -22mm;
-    height: 30%;  
-}
-.linkedin{
-
-    width: 40%;
-    border-radius: 50%;
-    margin-left: 85mm;
-    margin-top: -34mm;
-    height: 40%;
-}
-
-.twitter{
-
-    width: 30%;
-    border-radius: 30%;
-    margin-top: -60mm;
-    margin-left: 132mm;
-    height: 30%;
-}
-
-.gmail{
-
-    width: 30%;
-    border-radius: 5%;
-    margin-top: -47mm;
-    margin-left: 110mm;
-    height: 30%;
-}
-
 h{
     font-weight:bolder;
     text-align: center;
@@ -495,7 +428,7 @@ h{
     width: 80%;
     z-index: 5;
     padding: 15px 30px 0px 30px;
-    display: flex;
+    display: none;/*flex;*/
     align-items: center;
     justify-content: space-between;
     background-color: #eee;
@@ -512,4 +445,58 @@ h{
     color: white;
     border-radius: 2px;
     cursor: pointer;
+}
+
+footer {
+    margin-top: 50px;
+    border-top: 1px solid #d1d9e6;
+    background-color: #e6e7ee;
+    height: 300px;
+}
+
+.foo-left {
+    width: 30%;
+    height: 100%;
+}
+
+.footer-logo {
+    width: 200px;
+    margin-left: 10%;
+}
+
+.social {
+    margin-left: 10%;
+}
+
+.social img {
+    width: 20px;
+    margin: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social div {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 5px;
+    border: 1px solid #d1d9e6;
+    box-shadow: -4px -4px 8px #f7f7f9, 4px 4px 8px #c0c1c6;
+}
+
+.facebook:hover {
+    box-shadow:  -4px -4px 8px inset #f7f7f9, 4px 4px 8px inset #c0c1c6;
+}
+
+.instagram:hover {
+    box-shadow:  -4px -4px 8px inset #f7f7f9, 4px 4px 8px inset #c0c1c6;
+}
+
+.twitter:hover {
+    box-shadow:  -4px -4px 8px inset #f7f7f9, 4px 4px 8px inset #c0c1c6;
+}
+
+.linkedin:hover {
+    box-shadow:  -4px -4px 8px inset #f7f7f9, 4px 4px 8px inset #c0c1c6;
 }
