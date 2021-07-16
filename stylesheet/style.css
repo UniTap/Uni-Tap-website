@@ -451,12 +451,14 @@ footer {
     margin-top: 50px;
     border-top: 1px solid #d1d9e6;
     background-color: #e6e7ee;
-    height: 300px;
+    height: 500px;
 }
 
-.foo-left {
-    width: 30%;
+.foo {
+    width: 33%;
     height: 100%;
+    display: inline-block;
+    overflow: hidden;
 }
 
 .footer-logo {
@@ -499,4 +501,37 @@ footer {
 
 .linkedin:hover {
     box-shadow:  -4px -4px 8px inset #f7f7f9, 4px 4px 8px inset #c0c1c6;
+}
+
+.qlinks-header {
+    font-size: 32px;
+    font-weight: 500;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.qlinks a {
+    text-decoration: none;
+    color: #888;
+}
+
+.qlinks a:hover {
+    color: #ff7812;
+}
+
+.qlinks li {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.qlinks li:hover {
+    border: 1px solid #d1d9e6;
+    box-shadow:  -4px -4px 8px inset #f7f7f9, 4px 4px 8px inset #c0c1c6;
+}
+
+.twitter-container {
+    margin-top: 30px;
+    margin-left: calc(calc(100% - 300px)/2);
 }
