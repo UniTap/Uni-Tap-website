@@ -74,15 +74,18 @@ header {
 }
 
 img.mission-and-vision {
+    display: block;
     width: 100%;
-    height: 60%;
+    height: 100%;
 }
 
 .imgdiv {
+    position: relative;
+    display: inline-block;
     text-align: center;
 }
 
-.imgdiv p {
+.about {
     position: absolute;
     margin: 5px auto;
     padding: 5px 10px;
@@ -91,13 +94,37 @@ img.mission-and-vision {
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
     color: var(--color-white);
-    top: 18%;
-    left: 15%;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .imgdiv p span {
     font-size: 42px;
     padding: 16px 0;
+}
+
+@media only screen and (max-width: 900px) {
+    .about {
+        font-size: 18px;
+    }
+    .imgdiv p span {
+        font-size: 28px;
+        padding: 8px 0;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .about {
+        font-size: 12px;
+    }
+    .imgdiv p span {
+        font-size: 20px;
+        padding: 4px 0;
+    }
+    .row {
+        width: 50%;
+    }
 }
 
 
