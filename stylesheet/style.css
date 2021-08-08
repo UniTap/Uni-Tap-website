@@ -69,7 +69,7 @@ header {
     z-index: 100;
 }
 
-.subt{
+.subt {
     width: 50%;
     line-height: 10vh;
     display: block;
@@ -77,11 +77,10 @@ header {
     margin-top: -15vh;
     z-index: 100;
     color: black;
-    font-weight: bolder;  
+    font-weight: bolder;
     font-size: 10vh;
     text-align: center;
 }
-
 
 .sub-subt {
     display: block;
@@ -89,36 +88,35 @@ header {
     margin-left: 17%;
     color: lightslategray;
     font-size: 4vh;
-
 }
 
-.idk{
+.idk {
     transform: skewY(5deg);
 }
 
-.center_bg{
+.center_bg {
     object-fit: cover;
     object-position: center;
-    width:100%;
-    height:300mm;
+    width: 100%;
+    height: 300mm;
 }
 
-.features{
+.features {
     object-fit: cover;
     object-position: center;
-    height:50mm;
-    width:50mm;
+    height: 50mm;
+    width: 50mm;
     z-index: -10;
 }
 
 #idk1 {
-    transform: skewY(-5deg); 
-    margin-top: -295mm; 
+    transform: skewY(-5deg);
+    margin-top: -295mm;
 }
 
 p {
     display: block;
-    z-index:0;
+    z-index: 0;
     color: black;
 }
 
@@ -130,7 +128,6 @@ h2 {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-top: 0px;
-    
 }
 
 p {
@@ -141,17 +138,15 @@ p {
 ul,
 li {
     list-style: none;
-   
 }
 
 ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
 }
 
-ul.tags li a {
+ul.tags li div {
     text-decoration: none;
     color: #000;
     background: #ffc;
@@ -169,78 +164,82 @@ ul.tags li a {
     transition: transform .15s linear;
 }
 
-ul.tags li:nth-child(10n) a {
+ul.tags li:nth-child(10n) div {
     transform: rotate(5deg);
     position: relative;
     top: 5px;
     background: #ffbe0b;
 }
 
-ul.tags li:nth-child(10n+1) a {
+ul.tags li:nth-child(10n+1) div {
     transform: rotate(-10deg);
     position: relative;
     top: -10px;
     background: #fb5607;
 }
 
-ul.tags li:nth-child(10n+2) a {
+#with-bg {
+    background: url("../images/1.jpg") !important;
+}
+
+ul.tags li:nth-child(10n+2) div {
     transform: rotate(10deg);
     position: relative;
     top: 10px;
     background: #ff006e;
 }
 
-ul.tags li:nth-child(10n+3) a {
+ul.tags li:nth-child(10n+3) div {
     transform: rotate(-5deg);
     position: relative;
     top: -5px;
     background: #8338ec;
 }
 
-ul.tags li:nth-child(10n+4) a {
+ul.tags li:nth-child(10n+4) div {
     transform: rotate(5deg);
     position: relative;
     top: 5px;
     background: #3a86ff;
 }
 
-ul.tags li:nth-child(10n+5) a {
+ul.tags li:nth-child(10n+5) div {
     transform: rotate(-10deg);
     position: relative;
     top: -10px;
     background: #e63946;
 }
 
-ul.tags li:nth-child(10n+6) a {
+ul.tags li:nth-child(10n+6) div {
     transform: rotate(10deg);
     position: relative;
     top: 10px;
     background: #ffd166;
 }
 
-ul.tags li:nth-child(10n+7) a {
+ul.tags li:nth-child(10n+7) div {
     transform: rotate(-5deg);
     position: relative;
     top: -5px;
     background: #06d6a0;
 }
 
-ul.tags li:nth-child(10n+8) a {
+ul.tags li:nth-child(10n+8) div {
     transform: rotate(5deg);
     position: relative;
     top: 5px;
     background: #8a5a44;
 }
 
-ul.tags li:nth-child(10n+9) a {
+ul.tags li:nth-child(10n+9) div {
     transform: rotate(-10deg);
     position: relative;
     top: -10px;
     background: #ffafcc;
 }
 
-ul.tags li a:hover,
-ul.tags li a:focus {
+ul.tags li div:hover,
+ul.tags li div:focus {
     box-shadow: 10px 10px 7px rgba(0, 0, 0, .7);
     transform: scale(1.25);
     position: relative;
@@ -456,7 +455,6 @@ h {
     z-index: 5;
     padding: 15px 30px 0px 30px;
     display: none;
-    /*flex;*/
     align-items: center;
     justify-content: space-between;
     background-color: #eee;
