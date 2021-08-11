@@ -19,7 +19,7 @@ body {
     width: 100%;
     height: 400px;
     opacity: 0.7;
-    --gradient-color-1: #ef008f;
+    --gradient-color-1: #e3c0d3;
     --gradient-color-2: #6ec3f4;
     --gradient-color-3: #7038ff;
     --gradient-color-4: #ffba27;
@@ -151,8 +151,42 @@ ul {
     
 }
 
-#bg1 {
+.flip-card {
     background: url("../images/1.jpg") !important;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+  
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
 }
 
 
@@ -265,7 +299,7 @@ ul.tags li:nth-child(10n)::before {
     width: 95px;
     height: 30px;
     z-index: 2;
-    background-color: lightgray;
+    background-color:rgba(0,0,0,0);
     border: 2px solid rgba(255, 255, 255, 0.5);
     -webkit-box-shadow: 0 0 5px #888;
     -moz-box-shadow: 0 0 5px #888;
@@ -284,7 +318,7 @@ ul.tags li:nth-child(10n+1)::before {
     width: 95px;
     height: 30px;
     z-index: 2;
-    background-color: lightgray;
+    background-color: rgba(0,0,0,0);
     border: 2px solid rgba(255, 255, 255, 0.5);
     -webkit-box-shadow: 0 0 5px #888;
     -moz-box-shadow: 0 0 5px #888;
@@ -303,7 +337,7 @@ ul.tags li:nth-child(10n+2)::before {
     width: 95px;
     height: 30px;
     z-index: 2;
-    background-color: lightgray;
+    background-color: rgba(0,0,0,0);
     border: 2px solid rgba(255, 255, 255, 0.5);
     -webkit-box-shadow: 0 0 5px #888;
     -moz-box-shadow: 0 0 5px #888;
@@ -322,7 +356,7 @@ ul.tags li:nth-child(10n+3)::before {
     width: 95px;
     height: 30px;
     z-index: 2;
-    background-color: lightgray;
+    background-color: 	rgba(0,0,0,0);
     border: 2px solid rgba(255, 255, 255, 0.5);
     -webkit-box-shadow: 0 0 5px #888;
     -moz-box-shadow: 0 0 5px #888;
@@ -341,7 +375,7 @@ ul.tags li:nth-child(10n+4)::before {
     width: 95px;
     height: 30px;
     z-index: 2;
-    background-color: lightgray;
+    background-color:rgba(0,0,0,0);
     border: 2px solid rgba(255, 255, 255, 0.5);
     -webkit-box-shadow: 0 0 5px #888;
     -moz-box-shadow: 0 0 5px #888;
@@ -360,7 +394,7 @@ ul.tags li:nth-child(10n+5)::before {
     width: 95px;
     height: 30px;
     z-index: 2;
-    background-color: lightgray;
+    background-color: rgba(0,0,0,0);
     border: 2px solid rgba(255, 255, 255, 0.5);
     -webkit-box-shadow: 0 0 5px #888;
     -moz-box-shadow: 0 0 5px #888;
@@ -379,7 +413,7 @@ ul.tags li:nth-child(10n+6)::before {
     width: 95px;
     height: 30px;
     z-index: 2;
-    background-color: lightgray;
+    background-color: rgba(0,0,0,0);
     border: 2px solid rgba(255, 255, 255, 0.5);
     -webkit-box-shadow: 0 0 5px #888;
     -moz-box-shadow: 0 0 5px #888;
@@ -398,7 +432,7 @@ ul.tags li:nth-child(10n+7)::before {
     width: 95px;
     height: 30px;
     z-index: 2;
-    background-color: lightgray;
+    background-color: rgba(0,0,0,0);
     border: 2px solid rgba(255, 255, 255, 0.5);
     -webkit-box-shadow: 0 0 5px #888;
     -moz-box-shadow: 0 0 5px #888;
@@ -417,7 +451,7 @@ ul.tags li:nth-child(10n+8)::before {
     width: 95px;
     height: 30px;
     z-index: 2;
-    background-color: lightgray;
+    background-color: rgba(0,0,0,0);
     border: 2px solid rgba(255, 255, 255, 0.5);
     -webkit-box-shadow: 0 0 5px #888;
     -moz-box-shadow: 0 0 5px #888;
@@ -436,7 +470,7 @@ ul.tags li:nth-child(10n+9)::before {
     width: 95px;
     height: 30px;
     z-index: 2;
-    background-color: lightgray;
+    background-color: rgba(0,0,0,0);
     border: 2px solid rgba(255, 255, 255, 0.5);
     -webkit-box-shadow: 0 0 5px #888;
     -moz-box-shadow: 0 0 5px #888;
