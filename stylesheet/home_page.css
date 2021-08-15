@@ -76,11 +76,12 @@ header {
     display: block;
     margin-left: 25%;
     margin-top: -15vh;
-    z-index: 100;
+    z-index: 2000;
     color: black;
     font-weight: bolder;
     font-size: 10vh;
     text-align: center;
+    margin-bottom: 5vh;
 }
 
 .sub-subt {
@@ -89,6 +90,10 @@ header {
     margin-left: 17%;
     color: lightslategray;
     font-size: 4vh;
+}
+
+.Desc {
+    margin-bottom: 10vh;
 }
 
 .idk {
@@ -102,29 +107,29 @@ header {
     height: 300mm;
 }
 
-
 #feature {
     transform: skewY(-5deg);
-    margin-top: -298mm;
+    margin-top: -250mm;
 }
 
-.heading{
-  background-color: transparent;
-  border: none;
-  color: white;
-  font-family: 'Roboto';
-  font-size: 30px;
-  margin-left: 35%;
-  margin-top: -70px ;
+.heading {
+    transform: skewY(5deg);
+    border-top: solid 3px #ff7a2d;
+    background-color: #ff7a2d;
 }
 
-.heading p{
-  margin: 0;
-  font-size: 80px;
-  font-family: 'Roboto';
-  background: -webkit-linear-gradient(85deg, #fe6105 50%,#fe6105 50%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.heading p {
+    margin: 0;
+    font-size: 100px;
+    font-family: 'Roboto';
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: skewY(-5deg) rotate(5deg);
+}
+
+.scrolled {
+    transform: skewY(-5deg) rotate(5deg) translate(75%, 0);
 }
 
 p {
@@ -210,7 +215,7 @@ ul {
     margin-left: 10mm;
     margin-right: 5mm;
     margin-top: 10mm;
-    box-shadow: 20px 15px 7px rgba(33, 33, 33, .7);
+    box-shadow: 5px 5px 7px rgba(33, 33, 33, .7);
     transform: rotate(-6deg);
     transition: transform .15s linear;
 }
@@ -287,7 +292,7 @@ ul.tags li:nth-child(10n+9) .flip-card {
 
 ul.tags li .flip-card:hover,
 ul.tags li .flip-card:focus {
-    box-shadow: 10px 10px 7px rgba(0, 0, 0, .7);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, .7);
     transform: scale(1.25);
     position: relative;
     z-index: 5;
@@ -493,233 +498,282 @@ h {
     margin-left: 50px;
 }
 
-.wrapper{
-  max-width: 1090px;
-  width: 100%;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 40mm;
-  justify-content: space-between;
+.wrapper {
+    max-width: 1090px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40mm;
+    justify-content: space-between;
 }
-.wrapper .table{
-  background: whitesmoke;
-  width: calc(33% - 20px);
-  padding: 30px 30px;
-  position: relative;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+
+.wrapper .table {
+    background: whitesmoke;
+    width: calc(33% - 20px);
+    padding: 30px 30px;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-.table .price-section{
-  display: flex;
-  justify-content: center;
+
+.table .price-section {
+    display: flex;
+    justify-content: center;
 }
-.table .price-area{
-  height: 120px;
-  width: 120px;
-  border-radius: 50%;
-  padding: 2px;
+
+.table .price-area {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    padding: 2px;
 }
-.price-area .inner-area{
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  line-height: 117px;
-  text-align: center;
-  color: #fff;
-  position: relative;
+
+.hidden-price {
+    filter: blur(7px);
 }
-.price-area .inner-area .text{
-  font-size: 25px;
-  font-weight: 400;
-  position: absolute;
-  top: -10px;
-  left: 17px;
+
+.price-area .inner-area {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    line-height: 117px;
+    text-align: center;
+    color: #fff;
+    position: relative;
 }
-.price-area .inner-area .price{
-  font-size: 45px;
-  font-weight: 500;
-  margin-left: 16px;
+
+.price-area .inner-area .text {
+    font-size: 25px;
+    font-weight: 400;
+    position: absolute;
+    top: -10px;
+    left: 17px;
 }
-.table .package-name{
-  width: 100%;
-  height: 2px;
-  margin: 35px 0;
-  position: relative;
+
+.inner-area {
+    font-size: 35px;
+    padding-top: -10px;
 }
-.table .package-name::before{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 25px;
-  font-weight: 500;
-  background: whitesmoke;
-  padding: 0 15px;
-  transform: translate(-50%, -50%);
+
+.price-area .inner-area .price {
+    font-size: 45px;
+    font-weight: 500;
+    margin-left: 16px;
 }
-.table .features li{
-  margin-bottom: 15px;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
+
+.table .package-name {
+    width: 100%;
+    height: 2px;
+    margin: 35px 0;
+    position: relative;
 }
-.features li .list-name{
-  font-size: 17px;
-  font-weight: 400;
+
+.table .package-name::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 25px;
+    font-weight: 500;
+    background: whitesmoke;
+    padding: 0 15px;
+    transform: translate(-50%, -50%);
 }
-.features li .icon{
-  font-size: 15px;
+
+.table .features li {
+    margin-bottom: 15px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
 }
-.features li .icon.check{
-  color: #2db94d;
+
+.features li .list-name {
+    font-size: 17px;
+    font-weight: 400;
 }
-.features li .icon.cross{
-  color: #cd3241;
+
+.features li .icon {
+    font-size: 15px;
 }
-.table .btn{
-  width: 100%;
-  display: flex;
-  margin-top: 35px;
-  justify-content: center;
+
+.features li .icon.check {
+    color: #2db94d;
 }
-.table .btn button{
-  width: 80%;
-  height: 50px;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 500;
-  border: none;
-  outline: none;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+
+.features li .icon.cross {
+    color: #cd3241;
 }
-.table .btn button:hover{
-  border-radius: 5px;
+
+.table .btn {
+    width: 100%;
+    display: flex;
+    margin-top: 35px;
+    justify-content: center;
 }
-.basic .features li::selection{
-  background: #ffd861;
+
+.table .btn button {
+    width: 80%;
+    height: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
+
+.table .btn button:hover {
+    border-radius: 5px;
+}
+
+.basic .features li::selection {
+    background: #ffd861;
+}
+
 .basic ::selection,
 .basic .price-area,
-.basic .inner-area{
-  background: #ffd861;
+.basic .inner-area {
+    background: #ffd861;
 }
-.basic .btn button{
-  border: 2px solid #ffd861;
-  background: #fff;
-  color: #ffd861;
+
+.basic .btn button {
+    border: 2px solid #ffd861;
+    background: #fff;
+    color: #ffd861;
 }
-.basic .btn button:hover{
-  background: #ffd861;
-  color: #fff;
+
+.basic .btn button:hover {
+    background: #ffd861;
+    color: #fff;
 }
+
 .premium ::selection,
 .premium .price-area,
-.premium .inner-area{
-  background: #a26bfa;
+.premium .inner-area {
+    background: #a26bfa;
 }
-.premium .btn button{
-  border: 2px solid #a26bfa;
-  color: #a26bfa;
-  background: #fff;
+
+.premium .btn button {
+    border: 2px solid #a26bfa;
+    color: #a26bfa;
+    background: #fff;
 }
-.premium .btn button:hover{
-  background: #833af8;
-  color: #fff;
+
+.premium .btn button:hover {
+    background: #833af8;
+    color: #fff;
 }
+
 .ultimate ::selection,
 .ultimate .price-area,
-.ultimate .inner-area{
-  background: #43ef8b;
+.ultimate .inner-area {
+    background: #43ef8b;
 }
-.ultimate .btn button{
-  border: 2px solid #43ef8b;
-  color: #43ef8b;
-  background: #fff;
+
+.ultimate .btn button {
+    border: 2px solid #43ef8b;
+    color: #43ef8b;
+    background: #fff;
 }
-.ultimate .btn button:hover{
-  background: #43ef8b;
-  color: #fff;
+
+.ultimate .btn button:hover {
+    background: #43ef8b;
+    color: #fff;
 }
-.basic .package-name{
-  background: #ffecb3;
+
+.basic .package-name {
+    background: #ffecb3;
 }
-.premium .package-name{
-  background: #d0b3ff;
+
+.premium .package-name {
+    background: #d0b3ff;
 }
-.ultimate .package-name{
-  background: #baf8d4;
+
+.ultimate .package-name {
+    background: #baf8d4;
 }
-.basic .package-name::before{
-  content: "Basic";
+
+.basic .package-name::before {
+    content: "Basic";
 }
-.premium .package-name::before{
-  content: "Premium";
-  font-size: 24px;
+
+.premium .package-name::before {
+    content: "Premium";
+    font-size: 24px;
 }
-.ultimate .package-name::before{
-  content: "Ultimate";
-  font-size: 24px;
+
+.ultimate .package-name::before {
+    content: "Beta";
+    font-size: 24px;
 }
+
 @media (max-width: 1020px) {
-  .wrapper .table{
-    width: calc(50% - 20px);
-    margin-bottom: 40px;
-  }
+    .wrapper .table {
+        width: calc(50% - 20px);
+        margin-bottom: 40px;
+    }
 }
+
 @media (max-width: 698px) {
-  .wrapper .table{
-    width: 100%;
-  }
+    .wrapper .table {
+        width: 100%;
+    }
 }
-::selection{
-  color: #fff;
+
+::selection {
+    color: #fff;
 }
-.table .ribbon{
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  overflow: hidden;
+
+.table .ribbon {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    overflow: hidden;
 }
+
 .table .ribbon::before,
-.table .ribbon::after{
-  position: absolute;
-  content: "";
-  z-index: -1;
-  display: block;
-  border: 7px solid #4606ac;
-  border-top-color: transparent;
-  border-left-color: transparent;
+.table .ribbon::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    display: block;
+    border: 7px solid #4606ac;
+    border-top-color: transparent;
+    border-left-color: transparent;
 }
-.table .ribbon::before{
-  top: 0px;
-  right: 15px;
+
+.table .ribbon::before {
+    top: 0px;
+    right: 15px;
 }
-.table .ribbon::after{
-  bottom: 15px;
-  left: 0px;
+
+.table .ribbon::after {
+    bottom: 15px;
+    left: 0px;
 }
-.table .ribbon span{
-  position: absolute;
-  top: 30px;
-  right: 0;
-  transform: rotate(-45deg);
-  width: 200px;
-  background: #a26bfa;
-  padding: 10px 0;
-  color: #fff;
-  text-align: center;
-  font-size: 17px;
-  text-transform: uppercase;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.12);
+
+.table .ribbon span {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    transform: rotate(-45deg);
+    width: 200px;
+    background: #a26bfa;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
 }
 
 .wrapper .table:hover {
-  transform:scale(1.05);
-  box-shadow: 0 10px 20px black;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px black;
 }
 
 .cookie-banner {
