@@ -6,6 +6,7 @@ body {
     background: white;
     color: #fff;
     box-sizing: border-box;
+    overflow-y: none;
 }
 
 * {
@@ -76,7 +77,7 @@ header {
     display: block;
     margin-left: 25%;
     margin-top: -15vh;
-    z-index: 2000;
+    z-index: 2000px;
     color: black;
     font-weight: bolder;
     font-size: 10vh;
@@ -88,7 +89,7 @@ header {
     display: block;
     width: 140vh;
     margin-left: 17%;
-    color: lightslategray;
+    color: lightsteelblue;
     font-size: 4vh;
 }
 
@@ -116,6 +117,21 @@ header {
     transform: skewY(5deg);
     border-top: solid 3px #ff7a2d;
     background-color: #ff7a2d;
+    height: 120px;
+    border-top: 3px solid black;
+}
+
+.heading h1{
+  transform: skewY(-5deg) rotate(5deg);
+  display: block;
+  position: fixed;
+  left: 1200px;
+  padding: 15px;
+  border: 0px 2px 2px 2px; 
+  border-top: 0;
+  border-color: black;
+  border-style: solid;
+  font-size: 45px;
 }
 
 .heading p {
@@ -148,18 +164,11 @@ p {
     color: black;
 }
 
+
+
 p {
     font-size: 15px;
-}
-
-p3{
-  font-size: 12px;
-  color: #000;
-}
-
-p4{
-  font-size: 10px;
-  color: #000;
+    padding: 10px;
 }
 
 ul,
@@ -173,20 +182,16 @@ ul {
     justify-content: center;
 }
 
-.flip-card {
-    perspective: 1000px;
-    background-color: transparent;
-}
-
 .flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
+    border-radius: 20px;
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    background-color: black;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background: transparent;
+    box-shadow: 8px 16px 15px black;
 }
 
 .flip-card:hover .flip-card-inner {
@@ -198,7 +203,8 @@ ul {
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
@@ -216,47 +222,44 @@ ul {
   background-image: url("../images/6.jpg");
 }
 .face2 {
-  background-image: url("../images/2.jpg");
+  background-image: url("../images/new8.jpg");
 }
 .face3 {
-  background-image: url("../images/7.jpg");
+  background-image: url("../images/new14.jpg");
 }
 .face4 {
-  background-image: url("../images/11.jpg");
+  background-image: url("../images/new2.jpg");
 }
 .face5 {
-  background-image: url("../images/5.jpg");
+  background-image: url("../images/new5.jpg");
 }
 .face6 {
-  background-image: url("../images/12.jpg");
+  background-image: url("../images/10.jpg");
 }
 .face7 {
-  background-image: url("../images/3.jpg");
+  background-image: url("../images/new1.jpg");
 }
 .face8 {
-  background-image: url("../images/9.jpg");
+  background-image: url("../images/new12.jpg");
 }
 .face9 {
-  background-image: url("../images/8.jpg");
+  background-image: url("../images/new11.jpg");
 }
 .face10 {
-  background-image: url("../images/10.jpg");
+  background-image: url("../images/8.jpg");
 }
 
 .flip-card {
     text-decoration: none;
     color: #000;
-    background: #ffc;
     display: block;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
     height: 15em;
     width: 15em;
-    padding: 1em;
     margin-left: 10mm;
     margin-right: 5mm;
     margin-top: 10mm;
-    box-shadow: 5px 5px 7px rgba(33, 33, 33, .7);
+    perspective: 1000px;
+    background-color: transparent;
     transform: rotate(-6deg);
     transition: transform .15s linear;
 }
@@ -264,76 +267,80 @@ ul {
 ul.tags li:nth-child(10n) .flip-card {
     transform: rotate(5deg);
     position: relative;
-    top: 5px;
-    background: #ffbe0b;
+    top: 40px;
+    left: 10px;
+
 }
 
 ul.tags li:nth-child(10n+1) .flip-card {
     transform: rotate(-10deg);
     position: relative;
-    top: -10px;
-    background: #06d6a0;
+    top: -50px;
+    left: -40px;
 }
 
 ul.tags li:nth-child(10n+2) .flip-card {
     transform: rotate(10deg);
     position: relative;
-    top: 10px;
-    background: #ff006e;
+    top: 40px;
+    left: -20px;
+
 }
 
 ul.tags li:nth-child(10n+3) .flip-card {
     transform: rotate(-5deg);
     position: relative;
     top: -5px;
-    background: #8338ec;
+
 }
 
 ul.tags li:nth-child(10n+4) .flip-card {
     transform: rotate(5deg);
     position: relative;
-    top: 5px;
-    background: #3a86ff;
+    top: 50px;
+    left: 20px;
+
 }
 
 ul.tags li:nth-child(10n+5) .flip-card {
     transform: rotate(-10deg);
     position: relative;
-    top: -10px;
-    background: #e63946;
+    top: 30px;
+    left: -20px;
+
 }
 
 ul.tags li:nth-child(10n+6) .flip-card {
     transform: rotate(10deg);
     position: relative;
-    top: 10px;
-    background: #ffd166;
+    top: 50px;
+
 }
 
 ul.tags li:nth-child(10n+7) .flip-card {
     transform: rotate(-5deg);
     position: relative;
     top: -5px;
-    background: greenyellow;
+
 }
 
 ul.tags li:nth-child(10n+8) .flip-card {
     transform: rotate(5deg);
     position: relative;
-    top: 5px;
-    background: #8a5a44;
+    top: 40px;
+    left: 30px;
+
 }
 
 ul.tags li:nth-child(10n+9) .flip-card {
     transform: rotate(-10deg);
     position: relative;
-    top: -10px;
-    background: #ffafcc;
+    top: 20px;
+
 }
 
 ul.tags li .flip-card:hover,
 ul.tags li .flip-card:focus {
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, .7);
     transform: scale(1.35);
     position: relative;
     z-index: 5;
@@ -347,9 +354,9 @@ ul.tags li:nth-child(10n)::before {
     content: ' ';
     display: block;
     position: relative;
-    left: 120px;
-    top: 54px;
-    width: 95px;
+    left: 130px;
+    top: 90px;
+    width: 105px;
     height: 30px;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0);
@@ -366,16 +373,16 @@ ul.tags li:nth-child(10n+1)::before {
     content: ' ';
     display: block;
     position: relative;
-    left: 80px;
-    top: 44px;
-    width: 95px;
+    left: 40px;
+    top: 4px;
+    width: 105px;
     height: 30px;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0);
     border: 2px solid rgba(255, 255, 255, 0.5);
     -webkit-box-shadow: 0 0 5px #888;
     -moz-box-shadow: 0 0 5px #888;
-    box-shadow: 4px 2px 2px #000;
+    box-shadow: 2px 2px 2px #000;
     -webkit-transform: rotate(-10deg);
     -moz-transform: rotate(-10deg);
     -o-transform: rotate(-10deg);
@@ -385,9 +392,9 @@ ul.tags li:nth-child(10n+2)::before {
     content: ' ';
     display: block;
     position: relative;
-    left: 130px;
-    top: 60px;
-    width: 95px;
+    left: 100px;
+    top: 90px;
+    width: 105px;
     height: 30px;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0);
@@ -406,7 +413,7 @@ ul.tags li:nth-child(10n+3)::before {
     position: relative;
     left: 94px;
     top: 45px;
-    width: 95px;
+    width: 105px;
     height: 30px;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0);
@@ -423,9 +430,9 @@ ul.tags li:nth-child(10n+4)::before {
     content: ' ';
     display: block;
     position: relative;
-    left: 120px;
-    top: 55px;
-    width: 95px;
+    left: 130px;
+    top: 100px;
+    width: 105px;
     height: 30px;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0);
@@ -442,9 +449,9 @@ ul.tags li:nth-child(10n+5)::before {
     content: ' ';
     display: block;
     position: relative;
-    left: 85px;
-    top: 42px;
-    width: 95px;
+    left: 55px;
+    top: 82px;
+    width: 105px;
     height: 30px;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0);
@@ -462,8 +469,8 @@ ul.tags li:nth-child(10n+6)::before {
     display: block;
     position: relative;
     left: 130px;
-    top: 60px;
-    width: 95px;
+    top: 100px;
+    width: 105px;
     height: 30px;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0);
@@ -482,7 +489,7 @@ ul.tags li:nth-child(10n+7)::before {
     position: relative;
     left: 90px;
     top: 45px;
-    width: 95px;
+    width: 105px;
     height: 30px;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0);
@@ -499,9 +506,9 @@ ul.tags li:nth-child(10n+8)::before {
     content: ' ';
     display: block;
     position: relative;
-    left: 120px;
-    top: 55px;
-    width: 95px;
+    left: 150px;
+    top: 95px;
+    width: 105px;
     height: 30px;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0);
@@ -519,8 +526,8 @@ ul.tags li:nth-child(10n+9)::before {
     display: block;
     position: relative;
     left: 85px;
-    top: 42px;
-    width: 95px;
+    top: 70px;
+    width: 105px;
     height: 30px;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0);
