@@ -115,10 +115,10 @@ header {
 
 .heading {
     transform: skewY(5deg);
-    border-top: solid 3px #ff7a2d;
-    background-color: #ff7a2d;
+    background-color: transparent;
     height: 120px;
-    border-top: 3px solid black;
+    border-bottom: 7px solid black;
+    bottom: 55px;
 }
 
 .heading h1{
@@ -127,22 +127,26 @@ header {
   position: fixed;
   left: 1200px;
   padding: 15px;
-  border: 0px 2px 2px 2px; 
-  border-top: 0;
+  border: 2px 2px 2px 2px; 
+  top: 5px;
+  background-color: #ff7a2d;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
   border-color: black;
   border-style: solid;
   font-size: 45px;
 }
 
-.heading p {
-    margin: 0;
-    font-size: 100px;
-    font-family: 'Roboto';
-    background: white;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.heading h3{
     transform: skewY(-5deg) rotate(5deg);
+    position: fixed;
+    left: 1300px;
+    bottom: -30px;
+    font-size: 70px;
 }
+
 
 .scrolled {
     transform: skewY(-5deg) rotate(5deg) translate(75%, 0);

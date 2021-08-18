@@ -37,7 +37,8 @@
             <div class="sub-subt">Perfect System for maintaining flawless relation between students and their School/University, by providing all the handling rights that the admins need and all the facilities that a student requires to make his/her curriculum easier.</div>
         </div><br><br><br>
         <div class="heading">
-            <h1>Features</h1>
+            <h1> &nbsp;Features</h1>
+            <h3>● &nbsp; ●</h3>
         </div>
     </header>
 
@@ -346,47 +347,6 @@
             </div>
         </div>
     </footer>
-    <script>
-        const scrollElement = document.getElementById("move-f");
-        const moveElement = document.getElementById("move-e");
-
-        const elementInView = (el, dividend = 1) => {
-            const elementTop = el.getBoundingClientRect().top;
-
-            return (
-                elementTop <=
-                (window.innerHeight || document.documentElement.clientHeight) / dividend
-            );
-        };
-
-        const elementOutofView = (el) => {
-            const elementTop = el.getBoundingClientRect().top;
-
-            return (
-                elementTop > (window.innerHeight || document.documentElement.clientHeight)
-            );
-        };
-
-        const displayScrollElement = (element) => {
-            element.classList.add("scrolled");
-        };
-
-        const hideScrollElement = (element) => {
-            element.classList.remove("scrolled");
-        };
-
-        const handleScrollAnimation = () => {
-            if (elementInView(scrollElement, 1.25)) {
-                displayScrollElement(moveElement);
-            } else if (elementOutofView(scrollElement)) {
-                hideScrollElement(moveElement)
-            }
-        }
-
-        window.addEventListener("scroll", () => {
-            handleScrollAnimation();
-        });
-    </script>
 </body>
 
 </html>
