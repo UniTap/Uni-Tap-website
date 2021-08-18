@@ -226,3 +226,93 @@ form .form-row .textarea {
         width: 40%!important;
     }
 }
+
+footer {
+
+    border-top: 1px solid #d1d9e6;
+    background-color: #e6e7ee;
+    height: 500px;
+}
+
+.foo {
+    width: 33%;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.footer-logo {
+    width: 200px;
+    margin-left: 10%;
+}
+
+.social {
+    margin-left: 10%;
+}
+
+.social img {
+    width: 20px;
+    margin: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social div {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 5px;
+    border: 1px solid #d1d9e6;
+    box-shadow: -4px -4px 8px #f7f7f9, 4px 4px 8px #c0c1c6;
+}
+
+.facebook:hover {
+    box-shadow: -4px -4px 8px inset #f7f7f9, 4px 4px 8px inset #c0c1c6;
+}
+
+.instagram:hover {
+    box-shadow: -4px -4px 8px inset #f7f7f9, 4px 4px 8px inset #c0c1c6;
+}
+
+.twitter:hover {
+    box-shadow: -4px -4px 8px inset #f7f7f9, 4px 4px 8px inset #c0c1c6;
+}
+
+.linkedin:hover {
+    box-shadow: -4px -4px 8px inset #f7f7f9, 4px 4px 8px inset #c0c1c6;
+}
+
+.qlinks-header {
+    font-size: 32px;
+    font-weight: 500;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.qlinks a {
+    text-decoration: none;
+    color: #888;
+}
+
+.qlinks a:hover {
+    color: #ff7812;
+}
+
+.qlinks li {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+.qlinks li:hover {
+    border: 1px solid #d1d9e6;
+    box-shadow: -4px -4px 8px inset #f7f7f9, 4px 4px 8px inset #c0c1c6;
+}
+
+.twitter-container {
+    margin-top: 30px;
+    margin-left: calc(calc(100% - 300px)/2);
+}
