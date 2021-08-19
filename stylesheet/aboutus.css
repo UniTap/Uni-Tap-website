@@ -285,8 +285,12 @@ h1:after {
     margin-top: 15px;
 }
 
-#aniket {
-    width: 80%;
+#nandan img {
+    width: 90%;
+}
+
+.img-box img {
+    width: 65%;
 }
 
 .img-box:after {
