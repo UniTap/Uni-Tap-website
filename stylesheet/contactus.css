@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+body {
+    margin: 20px auto;
+    font-family: 'Roboto';
+    background: white;
+    color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: #fff;
+    --color-red: red;
+    --color-yellow: yellow;
+    --color-green: green;
+    --color-lightBlue: rgb(0, 255, 255);
+    --color-cyan: cyan;
+    --color-blue: blue;
+    --color-magenta: magenta;
+    --color-violet: rgb(98, 31, 124);
+    --color-orange: rgb(209, 98, 7);
+    --color-black: rgb(0, 0, 0);
+}
+
+header {
+    position: relative;
+}
+
+.imgLogo {
+    position: relative;
+    width: 13%;
+    border-radius: 50%;
+    height: 2%;
+    padding: 3px 16px;
+    margin: 1px 8px;
+    /* top: 10%; */
+}
+
+#navlist a {
+    float: left;
+    display: block;
+    color: var( --color-black);
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 24px;
+    margin-top: 3%;
+    padding-right: 16px;
+}
+
+.navlist-right {
+    float: right;
+}
+
+#navlist a:hover {
+    border-bottom: 3px solid var(--color-orange);
+}
+
+.navlist-right a {
+    text-decoration: none;
+    color: var( --color-black);
+}
+
+.contact-form-whole {
+    background-image: url('../images/contact-bg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    height: 500px;
+}
+
+.container {
+    background: #fff;
+    width: 50% !important;
+    padding: 25px 40px 10px 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.container .text {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container form {
+    padding: 30px 0 0 0;
+}
+
+.container form .form-row {
+    display: flex;
+    margin: 32px 0;
+}
+
+form .form-row .input-data {
+    width: 100%;
+    height: 40px;
+    margin: 0 20px;
+    position: relative;
+}
+
+form .form-row .textarea {
+    height: 70px;
+}
+
+.input-data input,
+.textarea textarea {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+    padding: 8px 0;
+}
+
+.input-data input:focus~label,
+.textarea textarea:focus~label,
+.input-data input:valid~label,
+.textarea textarea:valid~label {
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #3498db;
+}
+
+.textarea textarea {
+    resize: none;
+    padding-top: 10px;
+}
+
+.input-data label {
+    position: absolute;
+    pointer-events: none;
+    bottom: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.textarea label {
+    width: 100%;
+    bottom: 40px;
+    background: #fff;
+}
+
+.input-data .underline {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+}
+
+.input-data .underline:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #3498db;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.input-data input:focus~.underline:before,
+.input-data input:valid~.underline:before,
+.textarea textarea:focus~.underline:before,
+.textarea textarea:valid~.underline:before {
+    transform: scale(1);
+}
+
+.submit-btn .input-data {
+    overflow: hidden;
+    height: 45px!important;
+    width: 25%!important;
+}
+
+.submit-btn .input-data .inner {
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+    transition: all 0.4s;
+    border: 2px solid var(--color-white);
+}
+
+.submit-btn .input-data:hover .inner {
+    left: 0;
+}
+
+.submit-btn .input-data input {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+@media (max-width: 700px) {
+    .container .text {
+        font-size: 30px;
+    }
+    .container form {
+        padding: 10px 0 0 0;
+    }
+    .container form .form-row {
+        display: block;
+    }
+    form .form-row .input-data {
+        margin: 35px 0!important;
+    }
+    .submit-btn .input-data {
+        width: 40%!important;
+    }
+}
+
+footer {
+
+    border-top: 1px solid #d1d9e6;
+    background-color: #e6e7ee;
+    height: 500px;
+}
+
+.foo {
+    width: 33%;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.footer-logo {
+    width: 200px;
+    margin-left: 10%;
+}
+
+.social {
+    margin-left: 10%;
+}
+
+.social img {
+    width: 20px;
+    margin: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social div {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 5px;
+    border: 1px solid #d1d9e6;
+    box-shadow: -4px -4px 8px #f7f7f9, 4px 4px 8px #c0c1c6;
+}
+
+.facebook:hover {
+    box-shadow: -4px -4px 8px inset #f7f7f9, 4px 4px 8px inset #c0c1c6;
+}
+
+.instagram:hover {
+    box-shadow: -4px -4px 8px inset #f7f7f9, 4px 4px 8px inset #c0c1c6;
+}
+
+.twitter:hover {
+    box-shadow: -4px -4px 8px inset #f7f7f9, 4px 4px 8px inset #c0c1c6;
+}
+
+.linkedin:hover {
+    box-shadow: -4px -4px 8px inset #f7f7f9, 4px 4px 8px inset #c0c1c6;
+}
+
+.qlinks-header {
+    font-size: 32px;
+    font-weight: 500;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.qlinks a {
+    text-decoration: none;
+    color: #888;
+}
+
+.qlinks a:hover {
+    color: #ff7812;
+}
+
+.qlinks li {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+.qlinks li:hover {
+    border: 1px solid #d1d9e6;
+    box-shadow: -4px -4px 8px inset #f7f7f9, 4px 4px 8px inset #c0c1c6;
+}
+
+.twitter-container {
+    margin-top: 30px;
+    margin-left: calc(calc(100% - 300px)/2);
+}
