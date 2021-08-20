@@ -1056,3 +1056,105 @@ footer {
         height: auto;
     }
 }
+
+@media (max-width: 620px) {
+    .imgLogo {
+        width: 150px;
+    }
+    #gradient-canvas {
+        border-radius: 0 0 50% 0;
+    }
+    .subt {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .sub-subt {
+        font-size: 23px;
+    }
+    .heading h1 {
+        font-size: 40px;
+        margin-top: 5px;
+    }
+    .heading h3 {
+        font-size: 60px;
+    }
+    .center_bg {
+        height: 1500px;
+    }
+    #feature {
+        margin-top: -1450px;
+    }
+    .flip-card {
+        width: 150px;
+        height: 150px;
+    }
+    .flip-card p {
+        font-size: 12px;
+    }
+    .flip-card-front h2 {
+        font-size: 24px;
+    }
+    .tags {
+        display: block;
+    }
+    ul .tags li {
+        margin: 0;
+    }
+    ul.tags li:nth-child(10n+1) .flip-card {
+        left: 0;
+    }
+    ul.tags li:nth-child(10n+2) .flip-card {
+        top: -40px;
+    }
+    ul.tags li:nth-child(10n+4) .flip-card {
+        top: 0px;
+    }
+    ul.tags li:nth-child(10n)::before {
+        width: 50px;
+        height: 20px;
+    }
+    ul.tags li:nth-child(10n+1)::before {
+        width: 50px;
+        height: 20px;
+    }
+    ul.tags li:nth-child(10n+2)::before {
+        width: 50px;
+        height: 20px;
+        top: -20px;
+    }
+    ul.tags li:nth-child(10n+3)::before {
+        width: 50px;
+        height: 20px;
+    }
+    ul.tags li:nth-child(10n+4)::before {
+        width: 50px;
+        height: 20px;
+        top: 20px;
+    }
+    ul.tags li:nth-child(10n+5)::before {
+        width: 50px;
+        height: 20px;
+    }
+    ul.tags li:nth-child(10n+6)::before {
+        width: 50px;
+        height: 20px;
+    }
+    ul.tags li:nth-child(10n+7)::before {
+        width: 50px;
+        height: 20px;
+    }
+    ul.tags li:nth-child(10n+8)::before {
+        width: 50px;
+        height: 20px;
+    }
+    ul.tags li:nth-child(10n+9)::before {
+        width: 50px;
+        height: 20px;
+    }
+    .features li .list-name {
+        font-size: 15px;
+    }
+    .qlinks li {
+        width: 60%;
+    }
+}
