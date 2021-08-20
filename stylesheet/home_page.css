@@ -1150,6 +1150,9 @@ footer {
     .center_bg {
         height: 1500px;
     }
+    .idk {
+        height: 1500px;
+    }
     #feature {
         margin-top: -1450px;
     }
@@ -1170,55 +1173,106 @@ footer {
         margin: 0;
     }
     ul.tags li:nth-child(10n+1) .flip-card {
-        left: 0;
-    }
-    ul.tags li:nth-child(10n+2) .flip-card {
+        left: 90px;
         top: -40px;
     }
+    ul.tags li:nth-child(10n+2) .flip-card {
+        top: -140px;
+        left: -70px;
+    }
+    ul.tags li:nth-child(10n+3) .flip-card {
+        top: -170px;
+        left: 90px;
+    }
     ul.tags li:nth-child(10n+4) .flip-card {
-        top: 0px;
+        top: -230px;
+        left: -70px;
+    }
+    ul.tags li:nth-child(10n+5) .flip-card {
+        top: -300px;
+        left: 90px;
+    }
+    ul.tags li:nth-child(10n+6) .flip-card {
+        top: -400px;
+        left: -70px;
+    }
+    ul.tags li:nth-child(10n+7) .flip-card {
+        top: -450px;
+        left: 90px;
+    }
+    ul.tags li:nth-child(10n+8) .flip-card {
+        top: -550px;
+        left: -70px;
+    }
+    ul.tags li:nth-child(10n+9) .flip-card {
+        top: -650px;
+        left: 90px;
+    }
+    ul.tags li:nth-child(10n) .flip-card {
+        top: -750px;
+        left: -70px;
     }
     ul.tags li:nth-child(10n)::before {
         width: 50px;
         height: 20px;
+        top: -730px;
+        left: 20px;
     }
     ul.tags li:nth-child(10n+1)::before {
         width: 50px;
         height: 20px;
+        left: 150px;
     }
     ul.tags li:nth-child(10n+2)::before {
         width: 50px;
         height: 20px;
-        top: -20px;
+        top: -120px;
+        left: 20px;
     }
     ul.tags li:nth-child(10n+3)::before {
         width: 50px;
         height: 20px;
+        top: -150px;
+        left: 150px;
     }
     ul.tags li:nth-child(10n+4)::before {
         width: 50px;
         height: 20px;
-        top: 20px;
+        top: -210px;
+        left: 20px;
     }
     ul.tags li:nth-child(10n+5)::before {
         width: 50px;
         height: 20px;
+        top: -280px;
+        left: 150px;
     }
     ul.tags li:nth-child(10n+6)::before {
         width: 50px;
         height: 20px;
+        top: -380px;
+        left: 20px;
     }
     ul.tags li:nth-child(10n+7)::before {
         width: 50px;
         height: 20px;
+        top: -430px;
+        left: 150px;
     }
     ul.tags li:nth-child(10n+8)::before {
         width: 50px;
         height: 20px;
+        top: -530px;
+        left: 20px;
     }
     ul.tags li:nth-child(10n+9)::before {
         width: 50px;
         height: 20px;
+        top: -630px;
+        left: 150px;
+    }
+    .wrapper {
+        margin-top: 50px;
     }
     .features li .list-name {
         font-size: 15px;
