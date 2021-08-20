@@ -346,5 +346,72 @@ a:-webkit-any-link {
     opacity: 1;
 }
 
+@media (max-width: 1100px) {
+    .imgLogo {
+        width: 170px;
+    }
+    .foo {
+        width: 80%;
+    }
+    .footer-logo {
+        margin: 0 50% 0 50%;
+        transform: translate(-50%, 0);
+    }
+    .social {
+        margin: 0 50% 0 50%;
+        width: 200px;
+        transform: translate(-50%, 0);
+    }
+    .left {
+        height: auto;
+        padding-bottom: 50px;
+        margin-left: 10%;
+    }
+    .footer-center {
+        margin-left: 10%;
+    }
+    .right {
+        margin-left: 10%;
+    }
+    .qlinks-header {
+        text-align: center;
+    }
+    .qlinks {
+        margin-left: 25%;
+    }
+    .qlinks li {
+        text-align: center;
+    }
+    footer {
+        height: auto;
+    }
+}
+
+@media (max-width: 650px) {
+    header {
+        height: 150px;
+    }
+    #navlist a {
+        font-size: 18px;
+        padding: 10px;
+    }
+    .about {
+        top: 120px;
+        width: 80%;
+    }
+    .about p {
+        font-size: 10px;
+    }
+    .imgLogo {
+        width: 150px;
+    }
+    .profile {
+        width: 90% !important;
+    }
+    .qlinks li {
+        width: 60%;
+    }
+}
+
 
 /* ----------------------------------------------------------------------------------- */
