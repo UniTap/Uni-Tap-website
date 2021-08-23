@@ -11,6 +11,20 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <meta name="description" content="Resource Planner for Students | An easy-to-use System for students and their institute, by providing all the the facilities that students and faculties require to make it a smoother experience for both.">
+    <meta name="keywords" content="SRP, Student Resource Planner, Uni-Tap, UniTap, Student Portal, College, School, Univarsity, management, institute, library, canteen, chat, sports, attendence, result, notice, help">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5CYES00K7D"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5CYES00K7D');
+    </script>
 </head>
 
 <body>
@@ -21,49 +35,48 @@
         <div id="navlist">
             <img class="imgLogo" src="./images/logo_wobg.svg" alt="Uni-Top">
             <div class="navlist-right">
-                <a href="./home_page.html">Home</a>
+                <a href="https://unitap.software">Home</a>
                 <a href="./aboutUs.html">About</a>
                 <a href="./contactUs.html">Contact</a>
-                <a href="#">Blog</a>
+                <a href="https://blog.unitap.software/">Blog</a>
                 <a href="#">Login</a>
             </div>
         </div>
     </header>
-    <br> <br>
     <!-- <section> -->
     <div class="contact-form-whole">
         <div class="container">
             <div class="text">
                 Contact Us
             </div>
-            <form action="#">
+            <form name="contact" method="POST" data-netlify="true">
                 <div class="form-row">
                     <div class="input-data">
-                        <input type="text" required>
+                        <input type="text" name="first-name" required>
                         <div class="underline"></div>
                         <label for="">First Name</label>
                     </div>
                     <div class="input-data">
-                        <input type="text" required>
+                        <input type="text" name="last-name" required>
                         <div class="underline"></div>
                         <label for="">Last Name</label>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="input-data">
-                        <input type="text" required>
+                        <input type="text" name="email" required>
                         <div class="underline"></div>
                         <label for="">Email Address</label>
                     </div>
                     <div class="input-data">
-                        <input type="number" required>
+                        <input type="number" name="number" required>
                         <div class="underline"></div>
                         <label for="">Phone no.</label>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="input-data textarea">
-                        <textarea rows="8" cols="80" required></textarea>
+                        <textarea name="message" rows="8" cols="80" required></textarea>
                         <br />
                         <div class="underline"></div>
                         <label for="">Write your message</label>
@@ -106,9 +119,9 @@
             </div>
             <div class="qlinks">
                 <ul class="link-list">
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="./contactUs.html">Contact</a></li>
+                    <li><a href="./aboutUs.html">About</a></li>
+                    <li><a href="https://blog.unitap.software/">Blog</a></li>
                     <li><a href="#">Uni-Tap login</a></li>
                 </ul>
             </div>

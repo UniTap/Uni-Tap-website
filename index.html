@@ -14,34 +14,63 @@
     <script defer src="Js/home_page.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script defer src="Js/header.js"></script>
+    <meta name="description" content="Resource Planner for Students | An easy-to-use System for students and their institute, by providing all the the facilities that students and faculties require to make it a smoother experience for both.">
+    <meta property="og:title" content="Uni-Tap | First SRP">
+    <meta property="og:description" content="An easy-to-use System for students and their institute, by providing all the the facilities that students and faculties require to make it a smoother experience for both.">
+    <meta property="og:img" content="./Uni-Tap_light.svg">
+    <meta name="keywords" content="SRP, Student Resource Planner, Uni-Tap, UniTap, Student Portal, College, School, Univarsity, management, institute, library, canteen, chat, sports, attendence, result, notice, help">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5CYES00K7D"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5CYES00K7D');
+    </script>
 </head>
 
 <body>
     <header>
         <div class="head">
             <div id="navlist">
-                <img class="imgLogo" src="./images/logo_wobg.svg" alt="Uni-Tap">
+                <img class="imgLogo" src="./images/Uni-Tap_light.svg" alt="Uni-Tap">
                 <div class="navlist-right">
-                    <a href="./home_page.html">Home</a>
+                    <a href="https://unitap.software">Home</a>
                     <a href="./aboutUs.html">About</a>
                     <a href="./contactUs.html">Contact</a>
-                    <a href="#">Blog</a>
+                    <a href="https://blog.unitap.software/">Blog</a>
                     <a href="#">Login</a>
+                    <div class="hamburger" id="bar-bg" onclick="menuo()"></div>
+                    <div class="hamburger" id="top-bur">
+                        <div class="ham-bar top-bar"></div>
+                        <div class="ham-bar"></div>
+                        <div class="ham-bar"></div>
+                    </div>
+
                 </div>
             </div>
             <canvas id="gradient-canvas"></canvas>
         </div>
         <div class="Desc">
-            <div class="subt">Centralised College Administration System</div>
-            <div class="sub-subt">Perfect System for maintaining flawless relation between students and their School/University, by providing all the handling rights that the admins need and all the facilities that a student requires to make his/her curriculum easier.</div>
+            <div class="subt">Resource Planner for Students</div>
+            <div class="sub-subt">An easy-to-use System for students and their institute, by providing all the the facilities that students and faculties require to make it a smoother experience for both.</div>
         </div><br><br><br>
         <div class="heading">
             <h1> &nbsp;Features</h1>
             <h3>● &nbsp; ●</h3>
         </div>
     </header>
-
+    <div class="m-menu" id="resp-menu">
+        <div class="menu-items"><a href="aboutUs.html">About</a></div>
+        <div class="menu-items"><a href="contactUs.html">Contact</a></div>
+        <div class="menu-items"><a href="https://blog.unitap.software/">Blog</a></div>
+        <div class="menu-items"><a href="#">Login</a></div>
+        <div class="menu-close" onclick="menuc()"></div>
+    </div>
     <div class="center">
         <div class="idk">
             <img class="center_bg" src="./images/Center_BG.jpg">
@@ -52,15 +81,11 @@
                             <div class="flip-card-inner">
                                 <div class="flip-card-front face1">
                                     <h2>Canteen</h2>
-                                  
+
                                 </div>
                                 <div class="flip-card-back face1">
                                     <p>
-                                      User can order anything available in the
-                                      canteen menu from the website itself, and 
-                                      pick it whenever favourable. This is very useful
-                                      as one doesn't have to wait in the line for ordering.
-                                      Can be very helpful in hectic back to back lecture schedules.
+                                        You can order food from the canteen directly from the website itself and collect it. This elminates the waiting for ordering, and can save a lot of time.
                                     </p>
                                 </div>
                             </div>
@@ -70,16 +95,12 @@
                         <div class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front face2">
-                                    <h2>Chit-Chat</h2>
-                                    
+                                    <h2>Chat</h2>
+
                                 </div>
                                 <div class="flip-card-back face2">
                                     <p>
-                                      Chat option is also available in our website where-in
-                                      the users can chat with faculties or supervisors or their
-                                      respective mentors in case of any doubt,query or problem.
-                                      The chat is end to end encrypted so as to ensure privacy
-                                      and security of the fellow users.
+                                        You can chat directly with faculties and collegues without the hassle of storing their numbers.
                                     </p>
                                 </div>
                             </div>
@@ -90,15 +111,11 @@
                             <div class="flip-card-inner">
                                 <div class="flip-card-front face3">
                                     <h2>Results</h2>
-                                   
+
                                 </div>
                                 <div class="flip-card-back face3">
                                     <p>
-                                      Students don't have to maintain different platforms for 
-                                      checking the results. In-fact all the results of the exams 
-                                      taken by the institute or the university in past or present 
-                                      can be displayed here. Also Stats of the results are provided
-                                      for the user to analyse his/her strength or weakness.
+                                        You can find all the exam results and how you have performed with analysis within a tap!
                                     </p>
                                 </div>
                             </div>
@@ -109,53 +126,40 @@
                             <div class="flip-card-inner">
                                 <div class="flip-card-front face4">
                                     <h2>Sports</h2>
-                                   
+
                                 </div>
                                 <div class="flip-card-back face4">
                                     <p>
-                                      The issued equipments from the sports section are shown in the particular 
-                                      student's profile. Also all available sports equipment in real time 
-                                      are shown so that student goes for issuing only if available. The 
-                                      student will also be reminded about the return date and time so 
-                                      he/she can avoid fines.
-
+                                        Who doesn't love sports?! Now you can keep track of all the college equipments you have issued!
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </li>
                     <li>
-                      <div class="flip-card">
-                          <div class="flip-card-inner">
-                              <div class="flip-card-front face5">
-                                  <h2>Library</h2>
-                                  
-                              </div> 
-                              <div class="flip-card-back face5">
-                                  <p> 
-                                    The books issued from the library are shown in the particular 
-                                    student's profile. Also all available books in real time 
-                                    are shown so that student goes for issuing only if available. The 
-                                    student will also be reminded about the return date and time so 
-                                    he/she can avoid fines.
-                                  </p>
-                              </div>
-                          </div>
-                      </div>
-                  </li>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front face5">
+                                    <h2>Library</h2>
+
+                                </div>
+                                <div class="flip-card-back face5">
+                                    <p>
+                                        We all forget the return dates of library books, and now you can keep a track of issued books, all with a single touch!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li>
                         <div class="flip-card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front face6">
                                     <h2>Violations</h2>
-                                    
                                 </div>
                                 <div class="flip-card-back face6">
                                     <p>
-                                      Violation of rules and regulatons set by the 
-                                      institute;sports and library violation and all other violations
-                                      by the student while be shown in their respective profile's violation 
-                                      section and necessary actions will be taken or right will be revoked.
+                                        Now, you can read code of conduct and see all the times when you went the wrong way.
                                     </p>
                                 </div>
                             </div>
@@ -166,14 +170,11 @@
                             <div class="flip-card-inner">
                                 <div class="flip-card-front face7">
                                     <h2>Notice Board</h2>
-                                    
+
                                 </div>
                                 <div class="flip-card-back face7">
                                     <p>
-                                      Virtual Notice Board where-in all the notices relatable
-                                      to the particular student will be reflected in real time 
-                                      so that he/she does not have to physically go to the notice 
-                                      to stay updated.
+                                        A place where you can get all the important notices and get notified once a notice is uploaded so that you don't miss any.
                                     </p>
                                 </div>
                             </div>
@@ -184,14 +185,10 @@
                             <div class="flip-card-inner">
                                 <div class="flip-card-front face8">
                                     <h2>College Weekly</h2>
-                                   
                                 </div>
                                 <div class="flip-card-back face8">
                                     <p>
-                                      On-going events in university, upcoming competitions
-                                      fests, notices applicable to all, notifications, celebrations,
-                                      holidays, and many more things occuring in the college will be 
-                                      reflected in this section and will be updated every week as the name suggests.
+                                        Uni-Tap keeps you updated on the fests and happening in the colege directly from your dashboard!
                                     </p>
                                 </div>
                             </div>
@@ -202,13 +199,11 @@
                             <div class="flip-card-inner">
                                 <div class="flip-card-front face9">
                                     <h2>Admin Roles</h2>
-                                   
+
                                 </div>
                                 <div class="flip-card-back face9">
                                     <p>
-                                      Different admin rights are available for different Roles
-                                      of faculty and staff so that misuse can be prevented for 
-                                      security purposes and work flow can be efficiently concentrated.  
+                                        Faculty and staff can directly manage and carry out the tasks they have been assigend through our admin portal.
                                     </p>
                                 </div>
                             </div>
@@ -219,25 +214,51 @@
                             <div class="flip-card-inner">
                                 <div class="flip-card-front face10">
                                     <h2>Grievance</h2>
-                                   
+
                                 </div>
                                 <div class="flip-card-back face10">
                                     <p>
-                                      Any kind of problem or issue faced by the student can directly be
-                                      send to the respective person through the grievance feature. Mishaps,
-                                      biased behaviour, intolerable activities, ragging, molestation or any 
-                                      kind of unhealthy activity can be reported directly to the admins. 
+                                        Facing any issues? Directly contact the institute admins for any problems that you are facing.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    
+
                 </ul>
             </div>
         </div>
     </div>
     <div class="wrapper">
+
+        <div class="table ultimate">
+            <div class="price-section">
+                <div class="price-area">
+                    <div class="inner-area">
+                        Free
+                    </div>
+                </div>
+            </div>
+            <div class="package-name"></div>
+            <ul class="features">
+                <li>
+                    <span class="list-name">Unlimited users</span>
+                    <span class="icon check"><i class="fas fa-check">✓</i></span>
+                </li>
+                <li>
+                    <span class="list-name">All features accessible</span>
+                    <span class="icon check"><i class="fas fa-check">✓</i></span>
+                </li>
+                <li>
+                    <span class="list-name">Admin Portal</span>
+                    <span class="icon check"><i class="fas fa-check">✓</i></span>
+                </li>
+                <li>
+                    <span class="list-name">Lifetime support</span>
+                    <span class="icon check"><i class="fas fa-check">✓</i></span>
+                </li>
+            </ul>
+        </div>
         <div class="table premium">
             <div class="ribbon"><span>Coming soon..</span></div>
             <div class="hidden-price">
@@ -271,35 +292,7 @@
                 <div class="btn"><button>Purchase</button></div>
             </div>
         </div>
-        <div class="table ultimate">
-            <div class="price-section">
-                <div class="price-area">
-                    <div class="inner-area">
-                        Free
-                    </div>
-                </div>
-            </div>
-            <div class="package-name"></div>
-            <ul class="features">
-                <li>
-                    <span class="list-name">Unlimited users</span>
-                    <span class="icon check"><i class="fas fa-check">✓</i></span>
-                </li>
-                <li>
-                    <span class="list-name">All features accessible</span>
-                    <span class="icon check"><i class="fas fa-check">✓</i></span>
-                </li>
-                <li>
-                    <span class="list-name">Admin Portal</span>
-                    <span class="icon check"><i class="fas fa-check">✓</i></span>
-                </li>
-                <li>
-                    <span class="list-name">Lifetime support</span>
-                    <span class="icon check"><i class="fas fa-check">✓</i></span>
-                </li>
-            </ul>
-        </div>
-    </div> <br> <br> <br> <br>
+    </div>
     <div class="cookie-banner">
         <p>
             By using our website, you agree to our
@@ -327,15 +320,15 @@
                 </div>
             </div>
         </div>
-        <div class="foo center">
+        <div class="foo footer-center">
             <div class="qlinks-header">
                 Quick Links
             </div>
             <div class="qlinks">
                 <ol class="link-list">
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="./contactUs.html">Contact</a></li>
+                    <li><a href="./aboutUs.html">About</a></li>
+                    <li><a href="https://blog.unitap.software/">Blog</a></li>
                     <li><a href="#">Uni-Tap login</a></li>
                 </ol>
             </div>

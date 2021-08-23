@@ -20,11 +20,11 @@ body {
     border-radius: 0 0 80% 80%;
     width: 100%;
     height: 400px;
-    opacity: 0.7;
-    --gradient-color-1: #e3c0d3;
-    --gradient-color-2: #6ec3f4;
-    --gradient-color-3: #7038ff;
-    --gradient-color-4: #ffba27;
+    opacity: 0.75;
+    --gradient-color-1: #ff333d;
+    --gradient-color-2: #7038ff;
+    --gradient-color-3: #ffba27;
+    --gradient-color-4: #6ec3f4;
 }
 
 header {
@@ -39,14 +39,45 @@ header {
     z-index: 100;
 }
 
+.hamburger {
+    width: 50px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 30px 30px 0 0;
+    display: none;
+}
+
+#bar-bg {
+    background-color: #fff;
+    opacity: 0.3;
+}
+
+#top-bur {
+    margin-top: -30px;
+}
+
+.ham-bar {
+    width: 20px;
+    height: 3px;
+    border-radius: 2px;
+    margin-bottom: 4px;
+    background-color: #fff;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+}
+
 .imgLogo {
-    width: 13%;
-    height: 65%;
-    border-radius: 70%;
-    margin-top: -5vw;
-    margin-left: 2vw;
+    width: 250px;
+    top: 20px;
+    left: 20px;
     position: absolute;
     z-index: 100;
+}
+
+.imgLogo:hover {
+    opacity: 0.7;
+    cursor: pointer;
 }
 
 #navlist a {
@@ -71,26 +102,61 @@ header {
     z-index: 100;
 }
 
+.m-menu {
+    width: 80%;
+    margin-left: 10%;
+    height: 160px;
+    background-color: #fff;
+    position: absolute;
+    top: 50px;
+    z-index: 10000;
+    border: 1px solid #ff7812;
+    border-radius: 10px;
+    display: none;
+}
+
+.menu-close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    right: 5px;
+    border-radius: 10px;
+    background-color: #ff7a2d;
+    cursor: pointer;
+}
+
+.menu-items {
+    height: 40px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: #ff7a2d;
+}
+
 .subt {
-    width: 50%;
-    line-height: 10vh;
+    width: 45%;
+    line-height: 120px;
     display: block;
     margin-left: 25%;
-    margin-top: -15vh;
+    margin-top: -130px;
     z-index: 2000px;
     color: black;
     font-weight: bolder;
-    font-size: 10vh;
+    font-size: 100px;
     text-align: center;
     margin-bottom: 5vh;
 }
 
 .sub-subt {
     display: block;
-    width: 140vh;
-    margin-left: 17%;
-    color: lightsteelblue;
-    font-size: 4vh;
+    width: 100%;
+    padding: 0 10% 0 17%;
+    color: rgb(133, 162, 199);
+    font-size: 40px;
 }
 
 .Desc {
@@ -110,7 +176,7 @@ header {
 
 #feature {
     transform: skewY(-5deg);
-    margin-top: -298mm;
+    margin-top: -1000px;
 }
 
 .heading {
@@ -121,35 +187,25 @@ header {
     bottom: 55px;
 }
 
-.heading h1{
-  transform: skewY(-5deg) rotate(5deg);
-  display: block;
-  position: fixed;
-  left: 1200px;
-  padding: 15px;
-  border: 2px 2px 2px 2px; 
-  top: 5px;
-  background-color: #ff7a2d;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
-  border-color: black;
-  border-style: solid;
-  font-size: 45px;
+.heading h1 {
+    transform: skewY(-5deg) rotate(5deg);
+    display: block;
+    position: fixed;
+    left: 1200px;
+    padding: 15px;
+    margin-top: -20px;
+    background-color: #ff7a2d;
+    border-radius: 15px 15px 30px 30px;
+    border: 2px solid #000;
+    font-size: 55px;
 }
 
-.heading h3{
+.heading h3 {
     transform: skewY(-5deg) rotate(5deg);
     position: fixed;
     left: 1300px;
-    bottom: -30px;
+    bottom: -20px;
     font-size: 70px;
-}
-
-
-.scrolled {
-    transform: skewY(-5deg) rotate(5deg) translate(75%, 0);
 }
 
 p {
@@ -167,8 +223,6 @@ p {
     margin-top: 35%;
     color: black;
 }
-
-
 
 p {
     font-size: 15px;
@@ -207,8 +261,7 @@ ul {
     position: absolute;
     width: 100%;
     height: 100%;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 0 0 20px 20px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
@@ -223,34 +276,43 @@ ul {
 }
 
 .face1 {
-  background-image: url("../images/6.jpg");
+    background-image: url("../images/6.jpg");
 }
+
 .face2 {
-  background-image: url("../images/new8.jpg");
+    background-image: url("../images/new8.jpg");
 }
+
 .face3 {
-  background-image: url("../images/new14.jpg");
+    background-image: url("../images/new14.jpg");
 }
+
 .face4 {
-  background-image: url("../images/new2.jpg");
+    background-image: url("../images/new2.jpg");
 }
+
 .face5 {
-  background-image: url("../images/new5.jpg");
+    background-image: url("../images/new5.jpg");
 }
+
 .face6 {
   background-image: url("../images/teamBg.jpg");
 }
+
 .face7 {
-  background-image: url("../images/new1.jpg");
+    background-image: url("../images/new1.jpg");
 }
+
 .face8 {
-  background-image: url("../images/new12.jpg");
+    background-image: url("../images/new12.jpg");
 }
+
 .face9 {
-  background-image: url("../images/new11.jpg");
+    background-image: url("../images/new11.jpg");
 }
+
 .face10 {
-  background-image: url("../images/8.jpg");
+    background-image: url("../images/8.jpg");
 }
 
 .flip-card {
@@ -273,7 +335,6 @@ ul.tags li:nth-child(10n) .flip-card {
     position: relative;
     top: 40px;
     left: 10px;
-
 }
 
 ul.tags li:nth-child(10n+1) .flip-card {
@@ -288,14 +349,12 @@ ul.tags li:nth-child(10n+2) .flip-card {
     position: relative;
     top: 40px;
     left: -20px;
-
 }
 
 ul.tags li:nth-child(10n+3) .flip-card {
     transform: rotate(-5deg);
     position: relative;
     top: -5px;
-
 }
 
 ul.tags li:nth-child(10n+4) .flip-card {
@@ -303,7 +362,6 @@ ul.tags li:nth-child(10n+4) .flip-card {
     position: relative;
     top: 50px;
     left: 20px;
-
 }
 
 ul.tags li:nth-child(10n+5) .flip-card {
@@ -311,21 +369,18 @@ ul.tags li:nth-child(10n+5) .flip-card {
     position: relative;
     top: 30px;
     left: -20px;
-
 }
 
 ul.tags li:nth-child(10n+6) .flip-card {
     transform: rotate(10deg);
     position: relative;
     top: 50px;
-
 }
 
 ul.tags li:nth-child(10n+7) .flip-card {
     transform: rotate(-5deg);
     position: relative;
     top: -5px;
-
 }
 
 ul.tags li:nth-child(10n+8) .flip-card {
@@ -333,14 +388,12 @@ ul.tags li:nth-child(10n+8) .flip-card {
     position: relative;
     top: 40px;
     left: 30px;
-
 }
 
 ul.tags li:nth-child(10n+9) .flip-card {
     transform: rotate(-10deg);
     position: relative;
     top: 20px;
-
 }
 
 ul.tags li .flip-card:hover,
@@ -775,7 +828,7 @@ h {
 }
 
 ::selection {
-    color: #fff;
+    color: #ff7a2d;
 }
 
 .table .ribbon {
@@ -837,7 +890,6 @@ h {
     z-index: 5;
     padding: 15px 30px 0px 30px;
     display: none;
-    /*flex;*/
     align-items: center;
     justify-content: space-between;
     background-color: #eee;
@@ -943,4 +995,289 @@ footer {
 .twitter-container {
     margin-top: 30px;
     margin-left: calc(calc(100% - 300px)/2);
+}
+
+@media (max-width: 1100px) {
+    .imgLogo {
+        width: 170px;
+    }
+    #gradient-canvas {
+        border-radius: 0 0 60% 60%;
+    }
+    .subt {
+        font-size: 80px;
+        line-height: 80px;
+    }
+    .sub-subt {
+        font-size: 30px;
+    }
+    .heading h1 {
+        font-size: 40px;
+        margin-top: 5px;
+    }
+    .heading h3 {
+        font-size: 60px;
+    }
+    .center_bg {
+        height: 1500px;
+    }
+    #feature {
+        margin-top: -1450px;
+    }
+    .flip-card {
+        width: 200px;
+        height: 200px;
+        left: 10px;
+        margin-right: 5px;
+        margin-top: 10px;
+    }
+    .flip-card p {
+        font-size: 12px;
+    }
+    ul.tags li:nth-child(10n)::before {
+        left: 90px;
+        top: 60px;
+    }
+    ul.tags li:nth-child(10n+1)::before {
+        left: 20px;
+        top: -20px;
+    }
+    ul.tags li:nth-child(10n+2)::before {
+        left: 70px;
+        top: 60px;
+    }
+    ul.tags li:nth-child(10n+3)::before {
+        left: 60px;
+        top: 25px;
+    }
+    ul.tags li:nth-child(10n+4)::before {
+        left: 100px;
+        top: 70px;
+    }
+    ul.tags li:nth-child(10n+5)::before {
+        left: 50px;
+        top: 50px;
+    }
+    ul.tags li:nth-child(10n+6)::before {
+        left: 90px;
+        top: 70px;
+    }
+    ul.tags li:nth-child(10n+7)::before {
+        left: 70px;
+        top: 20px;
+    }
+    ul.tags li:nth-child(10n+8)::before {
+        left: 100px;
+        top: 60px;
+    }
+    ul.tags li:nth-child(10n+9)::before {
+        left: 70px;
+        top: 40px;
+    }
+    .wrapper {
+        width: 80%;
+    }
+    .features li .list-name {
+        font-size: 15px;
+    }
+    .table {
+        width: 40%;
+    }
+    .foo {
+        width: 80%;
+    }
+    .footer-logo {
+        margin: 0 50% 0 50%;
+        transform: translate(-50%, 0);
+    }
+    .social {
+        margin: 0 50% 0 50%;
+        width: 200px;
+        transform: translate(-50%, 0);
+    }
+    .left {
+        height: auto;
+        padding-bottom: 50px;
+        margin-left: 10%;
+    }
+    .footer-center {
+        margin-left: 10%;
+    }
+    .right {
+        margin-left: 10%;
+    }
+    .qlinks-header {
+        text-align: center;
+    }
+    .qlinks {
+        margin-left: 25%;
+    }
+    .qlinks li {
+        text-align: center;
+    }
+    footer {
+        height: auto;
+    }
+}
+
+@media (max-width: 620px) {
+    .imgLogo {
+        width: 150px;
+    }
+    .hamburger {
+        display: block;
+    }
+    #navlist a {
+        display: none;
+    }
+    #gradient-canvas {
+        border-radius: 0 0 50% 0;
+    }
+    .subt {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .sub-subt {
+        font-size: 23px;
+    }
+    .heading h1 {
+        font-size: 40px;
+        margin-top: 5px;
+    }
+    .heading h3 {
+        font-size: 60px;
+    }
+    .center_bg {
+        height: 1500px;
+    }
+    .idk {
+        height: 1500px;
+    }
+    #feature {
+        margin-top: -1450px;
+    }
+    .flip-card {
+        width: 150px;
+        height: 150px;
+    }
+    .flip-card p {
+        font-size: 12px;
+    }
+    .flip-card-front h2 {
+        font-size: 24px;
+    }
+    .tags {
+        display: block;
+    }
+    ul .tags li {
+        margin: 0;
+    }
+    ul.tags li:nth-child(10n+1) .flip-card {
+        left: 90px;
+        top: -40px;
+    }
+    ul.tags li:nth-child(10n+2) .flip-card {
+        top: -140px;
+        left: -70px;
+    }
+    ul.tags li:nth-child(10n+3) .flip-card {
+        top: -170px;
+        left: 90px;
+    }
+    ul.tags li:nth-child(10n+4) .flip-card {
+        top: -230px;
+        left: -70px;
+    }
+    ul.tags li:nth-child(10n+5) .flip-card {
+        top: -300px;
+        left: 90px;
+    }
+    ul.tags li:nth-child(10n+6) .flip-card {
+        top: -400px;
+        left: -70px;
+    }
+    ul.tags li:nth-child(10n+7) .flip-card {
+        top: -450px;
+        left: 90px;
+    }
+    ul.tags li:nth-child(10n+8) .flip-card {
+        top: -550px;
+        left: -70px;
+    }
+    ul.tags li:nth-child(10n+9) .flip-card {
+        top: -650px;
+        left: 90px;
+    }
+    ul.tags li:nth-child(10n) .flip-card {
+        top: -750px;
+        left: -70px;
+    }
+    ul.tags li:nth-child(10n)::before {
+        width: 50px;
+        height: 20px;
+        top: -730px;
+        left: 20px;
+    }
+    ul.tags li:nth-child(10n+1)::before {
+        width: 50px;
+        height: 20px;
+        left: 150px;
+    }
+    ul.tags li:nth-child(10n+2)::before {
+        width: 50px;
+        height: 20px;
+        top: -120px;
+        left: 20px;
+    }
+    ul.tags li:nth-child(10n+3)::before {
+        width: 50px;
+        height: 20px;
+        top: -150px;
+        left: 150px;
+    }
+    ul.tags li:nth-child(10n+4)::before {
+        width: 50px;
+        height: 20px;
+        top: -210px;
+        left: 20px;
+    }
+    ul.tags li:nth-child(10n+5)::before {
+        width: 50px;
+        height: 20px;
+        top: -280px;
+        left: 150px;
+    }
+    ul.tags li:nth-child(10n+6)::before {
+        width: 50px;
+        height: 20px;
+        top: -380px;
+        left: 20px;
+    }
+    ul.tags li:nth-child(10n+7)::before {
+        width: 50px;
+        height: 20px;
+        top: -430px;
+        left: 150px;
+    }
+    ul.tags li:nth-child(10n+8)::before {
+        width: 50px;
+        height: 20px;
+        top: -530px;
+        left: 20px;
+    }
+    ul.tags li:nth-child(10n+9)::before {
+        width: 50px;
+        height: 20px;
+        top: -630px;
+        left: 150px;
+    }
+    .wrapper {
+        margin-top: 50px;
+    }
+    .features li .list-name {
+        font-size: 15px;
+    }
+    .qlinks li {
+        width: 60%;
+    }
 }

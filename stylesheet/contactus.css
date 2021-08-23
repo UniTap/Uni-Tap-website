@@ -38,7 +38,6 @@ header {
     height: 2%;
     padding: 3px 16px;
     margin: 1px 8px;
-    /* top: 10%; */
 }
 
 #navlist a {
@@ -77,19 +76,23 @@ header {
 
 .container {
     background: #fff;
-    width: 50% !important;
+    width: 50%;
     padding: 25px 40px 10px 40px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
+    width: 600px !important;
 }
 
 .container .text {
     text-align: center;
-    font-size: 35px;
     font-weight: 600;
     background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.text {
+    font-size: 40px;
 }
 
 .container form {
@@ -228,7 +231,6 @@ form .form-row .textarea {
 }
 
 footer {
-
     border-top: 1px solid #d1d9e6;
     background-color: #e6e7ee;
     height: 500px;
@@ -315,4 +317,74 @@ footer {
 .twitter-container {
     margin-top: 30px;
     margin-left: calc(calc(100% - 300px)/2);
+}
+
+@media (max-width: 1100px) {
+    .imgLogo {
+        width: 170px;
+    }
+    .foo {
+        width: 80%;
+    }
+    .footer-logo {
+        margin: 0 50% 0 50%;
+        transform: translate(-50%, 0);
+    }
+    .social {
+        margin: 0 50% 0 50%;
+        width: 200px;
+        transform: translate(-50%, 0);
+    }
+    .left {
+        height: auto;
+        padding-bottom: 50px;
+        margin-left: 10%;
+    }
+    .footer-center {
+        margin-left: 10%;
+    }
+    .right {
+        margin-left: 10%;
+    }
+    .qlinks-header {
+        text-align: center;
+    }
+    .qlinks {
+        margin-left: 25%;
+    }
+    .qlinks li {
+        text-align: center;
+    }
+    footer {
+        height: auto;
+    }
+}
+
+@media (max-width: 650px) {
+    header {
+        height: 200px;
+    }
+    #navlist a {
+        font-size: 18px;
+        padding: 10px;
+    }
+    .contact-form-whole {
+        height: auto;
+        padding: 10px;
+    }
+    .container {
+        width: 90% !important;
+        padding: 10px 10px 0 10px;
+        line-height: 1;
+        height: 650px;
+    }
+    .text {
+        height: auto;
+    }
+    .imgLogo {
+        width: 150px;
+    }
+    .qlinks li {
+        width: 60%;
+    }
 }
