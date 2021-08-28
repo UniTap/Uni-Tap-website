@@ -31,6 +31,24 @@ header {
     position: relative;
 }
 
+.early {
+    height: 70px;
+    background-color: #23475d;
+    width: 100%;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+.early a {
+    color: #FFFFFF;
+}
+
+.early a:hover {
+    color: #ff7812;
+}
+
 #navlist {
     width: 100%;
     height: 50%;
@@ -296,7 +314,7 @@ ul {
 }
 
 .face6 {
-  background-image: url("../images/teamBg.jpg");
+    background-image: url("../images/teamBg.jpg");
 }
 
 .face7 {
@@ -1279,5 +1297,9 @@ footer {
     }
     .qlinks li {
         width: 60%;
+    }
+    .early {
+        font-size: 20px;
+        padding-top: 20px;
     }
 }
