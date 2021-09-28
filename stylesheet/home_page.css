@@ -936,7 +936,7 @@ footer {
 }
 
 .foo {
-    width: 33%;
+    width: 24%;
     height: 100%;
     display: inline-block;
     overflow: hidden;
@@ -1001,7 +1001,7 @@ footer {
 }
 
 .qlinks li {
-    width: 50%;
+    width: 60%;
     padding: 10px;
     border-radius: 5px;
     margin-top: 10px;
